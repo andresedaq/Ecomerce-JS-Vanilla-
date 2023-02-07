@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cartContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+}
+
+/* Contador */
+
+#contenedorContador {
+    display: flex;
+    margin: 1rem;
+}
+
+.botonContador {
+    width: 1rem;
+}
+
+.cart {
+    
+    height: 30px;
+}
+
+#product-container {
+    display: flex;
+    width: auto;
+    background-color: rgb(27, 26, 26);
+    color: white
+}
+
+.productImg {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productButtom {
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(118, 119, 118);
+    border-radius: 1rem;
+}
+
+.productButtom:hover {
+    color: white;
+}
+
+.carouselImg {
+    width: auto;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 26, 26);
+    padding: 2rem;
+}

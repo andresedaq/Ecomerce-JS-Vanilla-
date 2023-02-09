@@ -41,10 +41,6 @@ let carrito = [];
 
 var cartItems = localStorage.setItem("cartItems", 0);
 
-function handleDetail(){
-    console.log('modal');
-}
-
 function agregarProducto(id) {
     const parsedId = id.toString();
     const item = shoes.find(prod => prod.id === parsedId)
@@ -59,6 +55,7 @@ function agregarProducto(id) {
     console.log(carrito);
 }
 
+// Codigo del Span del icono de carrito
 function addItemsToCart() {
     const cartItems = localStorage.getItem("cartItems");
     const cartIndicator = document.getElementById("cartIndicator");
@@ -108,36 +105,3 @@ const mostrarCarrito = () => {
   </div>
     `)
 }
-
-
-
- 
-// onclick=handleDetail(${shoe.id}) 
-
-// function handleDetail(id) {
-//     var localId = localStorage.getItem('productId');
-
-//     if (localId) {
-//         localStorage.removeItem('productId');
-//         localStorage.setItem('productId', id);
-//     } else {
-//         localStorage.setItem('productId', id);
-//     }
-
-//     window.history.pushState(null,"","details.html");
-//     location.reload();
-// }
- 
-
-// Local Storage
-
-// const productContainer = document.getElementsByClassName('productImg');
-//     productContainer.addEventListener('click', ()=> {
-//     console.log("prueba")
-// });
-
-// const PRODUCT_ID = localStorage.getItem('productId');
-// const selectedProduct = shoes.filter(el => el.id === PRODUCT_ID);
-// const productTitle = document.getElementById('productName');
-// console.log(selectedProduct);
-// productTitle.innerText = selectedProduct.name;
